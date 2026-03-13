@@ -1,106 +1,258 @@
-/* Import fonts at the top */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
-/* Global font reset */
-body, h1, h2, h3, h4, h5, h6, p, span, a, li, label, input, button, textarea, select {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif !important;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+label,
+input,
+button,
+textarea,
+select {
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
 }
 
-/* Base Layout - Targeting the component tag directly to avoid flash */
-tb-login {
-    display: flex !important;
-    position: relative !important;
-    background-color: white !important; /* Ensure a clean background immediately */
+.tb-default .tb-custom-css.ng-star-inserted {
+  display: flex;
+  position: relative;
 }
 
-/* The Blue Left Panel */
-tb-login::before {
-    content: "";
-    flex: 0 0 37.5%;
-    background-color: #003ca6;
-    position: relative;
-    z-index: 1;
+.tb-default .ng-star-inserted.tb-custom-css {
+  display: flex;
+  position: relative;
 }
 
-/* The Bottom Left Logo */
-tb-login::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 6.25%;
-    width: 25%;
-    aspect-ratio: 331/500;
-    background: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-trans.png") no-repeat center bottom;
-    background-size: contain;
-    z-index: 2;
+.tb-default .ng-star-inserted.tb-custom-css::before {
+  content: "";
+  flex: 0 0 37.5%;
+  background-color: #003ca6;
+  position: relative;
 }
 
-/* Login Content Area - Remove Green Background Immediately */
-.tb-login-content {
-    flex: 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: transparent !important;
-    box-shadow: none !important;
+.tb-default .ng-star-inserted.tb-custom-css::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6.25%;
+  width: 25%;
+  aspect-ratio: 331/500;
+  height: auto;
+  background: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-trans.png") no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
 }
 
-/* Overlay Logos */
-.tb-login-content::before {
-    content: "";
-    position: fixed;
-    top: 40%;
-    inset-inline-start: 40px;
-    width: 8.8125rem;
-    height: 3.75rem;
-    background-size: cover;
-    background-image: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-white.svg");
-    z-index: 3;
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
 }
 
-.tb-login-content::after {
-    content: "IoT Platform";
-    position: fixed;
-    top: calc(40% + 5rem);
-    inset-inline-start: 40px;
-    width: calc(25% - 80px);
-    color: #fff;
-    font-size: 1.875rem;
-    font-weight: 400;
-    z-index: 3;
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::before,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::before,
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::after,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::after,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::before,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::after {
+  content: "";
+  position: fixed;
+  top: 40%;
+  inset-inline-start: 40px;
 }
 
-/* Hide Default ThingsBoard Logo/Header */
-.tb-login-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start {
-    display: none !important;
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::before,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::before,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::before {
+  width: 8.8125rem;
+  height: 3.75rem;
+  background-size: cover;
+  background-image: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-white.svg");
 }
 
-/* Card Styling */
-.tb-login-content .mat-mdc-card.mdc-card {
-    max-width: 400px !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::after,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::after,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::after {
+  content: "IoT Platform";
+  top: calc(40% + 5rem);
+  width: calc(25% - 80px);
+  color: #fff;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.tb-login-content .mat-mdc-card-content {
-    background: #ffffff !important;
-    padding: 24px !important;
-    border-radius: 8px !important;
-}
-
-/* Button Styling */
-button.mdc-button.mat-mdc-raised-button.mat-accent {
-    background-color: #004bcc !important;
-    height: 2.5rem !important;
-}
-
-button.mdc-button.mat-mdc-raised-button.mat-accent:hover {
-    background-color: #011e4e !important;
-}
-
-/* Responsive Hide for Mobile */
 @media screen and (max-width: 768px) {
-    tb-login::before, tb-login::after, .tb-login-content::before, .tb-login-content::after {
-        display: none !important;
-    }
+  .tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::after,
+  .tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::after,
+  .tb-default .ng-star-inserted.tb-custom-css .tb-login-content::after,
+  .tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::before,
+  .tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::before,
+  .tb-default .ng-star-inserted.tb-custom-css .tb-login-content::before,
+  .tb-default .ng-star-inserted.tb-custom-css::before,
+  .tb-default .ng-star-inserted.tb-custom-css::after {
+    display: none;
+  }
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card {
+  max-width: 400px !important;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: transparent;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled),
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled),
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled) {
+  color: #333333;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled):hover,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled):hover,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-button:not(:disabled):hover {
+  color: #004bcc;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content {
+  background: #ffffff;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form {
+  max-width: 360px !important;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start {
+  display: none;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .layout-padding > span::before {
+  content: "Sign In";
+  color: #004bcc;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple {
+  display: none;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  top: 40px;
+  padding-inline-start: 16px;
+  color: #948f8f;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above {
+  top: 30px;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix {
+  display: none;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput] {
+  border-radius: 8px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  padding: 0.5rem 1rem !important;
+  color: #948f8f;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .tb-dark.dark-foreground .mat-mdc-raised-button.mat-accent,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .tb-dark.dark-foreground .mat-mdc-raised-button.mat-accent,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .tb-dark.dark-foreground .mat-mdc-raised-button.mat-accent {
+  background-color: #004bcc;
+  height: 2.5rem;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix {
+  position: absolute;
+  inset-block-start: 30px;
+  inset-inline-end: 3px;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button .mat-icon,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button .mat-icon,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button .mat-icon {
+  color: #948f8f;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button:hover .mat-icon,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button:hover .mat-icon,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button:hover .mat-icon {
+  color: #004bcc;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .tb-action-button,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .tb-action-button,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .tb-action-button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  color: red;
+}
+
+.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
+.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
+.tb-default .ng-star-inserted.tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field.mat-form-field-invalid .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput] {
+  border-color: red;
+}
+
+button.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-accent.mat-mdc-button-base {
+  background: #004bcc;
+  box-shadow: none;
+}
+
+button.mdc-button.mdc-button--raised.mat-mdc-raised-button.mat-accent.mat-mdc-button-base:hover {
+  background: #011e4e;
+  box-shadow: none;
+}
+mat-card-header.mat-mdc-card-header {
+  background: #fff;
+}
+
+span.ng-star-inserted[style="height: 4px;"] {
+  display: none;
+}
+
+span[style="height: 50px;"]:empty {
+  display: none;
 }
