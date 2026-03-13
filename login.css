@@ -31,7 +31,8 @@ select {
 .tb-default .ng-star-inserted.tb-custom-css::before {
   content: "";
   flex: 0 0 37.5%;
-  background-color: #003ca6;
+  /* background-color: #003ca6; */
+  background-color:rgb(0, 166, 158);
   position: relative;
 }
 
