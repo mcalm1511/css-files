@@ -1,20 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-li,
-label,
-input,
-button,
-textarea,
-select {
-  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("https://your-cdn.com/fonts/PlusJakartaSans-VariableFont.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap; /* or 'block' if you want no fallback flash */
 }
 
+body, h1, h2, h3, h4, h5, h6,
+p, span, a, li, label,
+input, button, textarea, select {
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+}
