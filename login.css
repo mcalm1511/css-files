@@ -57,6 +57,10 @@ select {
   background: transparent !important;
 }
 
+.tb-default .tb-custom-css .tb-password-content .tb-password-card {
+  background-color: #fff !important;
+}
+
 .tb-default .tb-custom-css .tb-request-password-reset-content::before,
 .tb-default .tb-custom-css .tb-create-password-content::before,
 .tb-default .tb-custom-css .tb-request-password-reset-content::after,
