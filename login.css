@@ -182,14 +182,14 @@ select {
   display: none;
 } */
 
-.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
+/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput] {
   border-radius: 8px;
   border: 1px solid rgba(51, 51, 51, 0.1);
   padding: 0.5rem 1rem !important;
   color: #948f8f;
-}
+} */
 
 .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .tb-dark.dark-foreground .mat-mdc-raised-button.mat-accent,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .tb-dark.dark-foreground .mat-mdc-raised-button.mat-accent,
