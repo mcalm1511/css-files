@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); */
-/* body,
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body,
 h1,
 h2,
 h3,
@@ -16,7 +16,7 @@ button,
 textarea,
 select {
   font-family: "Plus Jakarta Sans", Arial, sans-serif;
-} */
+}
 
 .tb-default .tb-custom-css.ng-star-inserted {
   display: flex;
