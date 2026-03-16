@@ -61,7 +61,7 @@ select {
   background-color: #fff !important;
 }
 
-.tb-default .tb-custom-css .tb-login-content .mat-mdc-form-field:first-child {
+.tb-default .tb-custom-css .tb-login-content .mat-mdc-form-field {
   margin-bottom: 16px !important;
 }
 
