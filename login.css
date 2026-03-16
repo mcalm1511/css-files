@@ -162,19 +162,19 @@ select {
   display: none;
 }
 
-.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
+/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
   top: 40px;
   padding-inline-start: 16px;
   color: #948f8f;
-}
+} */
 
-.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above,
+/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label.mdc-floating-label--float-above {
   top: 30px;
-}
+} */
 
 /* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
