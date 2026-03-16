@@ -61,10 +61,6 @@ select {
   background-color: #fff !important;
 }
 
-.tb-default .tb-custom-css .tb-login-content .mat-mdc-form-field {
-  margin-bottom: 16px !important;
-}
-
 .tb-default .tb-custom-css .tb-request-password-reset-content::before,
 .tb-default .tb-custom-css .tb-create-password-content::before,
 .tb-default .tb-custom-css .tb-request-password-reset-content::after,
@@ -161,7 +157,6 @@ select {
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
 .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
-.tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple {
   display: none;
 }
