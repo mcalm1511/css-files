@@ -61,6 +61,10 @@ select {
   background-color: #fff !important;
 }
 
+.tb-default .tb-custom-css .tb-login-content mat-form-field:first-child {
+  margin-bottom: 16px;
+}
+
 .tb-default .tb-custom-css .tb-request-password-reset-content::before,
 .tb-default .tb-custom-css .tb-create-password-content::before,
 .tb-default .tb-custom-css .tb-request-password-reset-content::after,
@@ -202,8 +206,8 @@ select {
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix {
   position: absolute;
-  inset-block-start: 30px;
-  inset-inline-end: 3px;
+  /* inset-block-start: 30px; */
+  inset-inline-end: 5px;
 }
 
 .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button .mat-icon,
