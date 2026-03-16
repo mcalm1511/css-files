@@ -137,12 +137,12 @@ select {
   max-width: 360px !important;
 }
 
-.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
+/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start,
 .tb-default .tb-custom-css .tb-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form > .flex.flex-col > .flex.flex-col .flex.flex-col.items-center.justify-start {
   display: none;
-}
+} */
 
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .layout-padding > span::before {
   content: "Sign In";
@@ -153,7 +153,7 @@ select {
   line-height: normal;
 }
 
-/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
+.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-form-field-bottom-align,
 .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mdc-line-ripple,
@@ -176,11 +176,11 @@ select {
   top: 30px;
 }
 
-.tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
+/* .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix,
 .tb-default .tb-custom-css .tb-login-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-icon-prefix {
   display: none;
-}
+} */
 
 .tb-default .tb-custom-css .tb-request-password-reset-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
 .tb-default .tb-custom-css .tb-create-password-content .mat-mdc-card.mdc-card .mat-mdc-card-content form .mat-mdc-form-field .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix input[matinput],
@@ -257,7 +257,7 @@ span[style="height: 4px;"] {
 
 span[style="height: 50px;"]:empty {
   display: none;
-} */
+}
 
 @media screen and (max-width: 768px) {
   .tb-default .tb-custom-css .tb-request-password-reset-content::before,
