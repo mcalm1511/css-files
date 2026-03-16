@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-li,
-label,
-input,
-button,
-textarea,
-select {
-  font-family: "Plus Jakarta Sans", Arial, sans-serif;
-}
 
 .tb-default .tb-custom-css.ng-star-inserted {
   display: flex;
@@ -46,46 +27,4 @@ select {
   background: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-trans.png") no-repeat center bottom;
   background-size: contain;
   z-index: 1;
-}
-
-.tb-default .ng-star-inserted.tb-custom-css .tb-login-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent !important;
-}
-
-.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::before,
-.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::before,
-.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::after,
-.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::after,
-.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::before,
-.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::after {
-  content: "";
-  position: fixed;
-  top: 40%;
-  inset-inline-start: 40px;
-}
-
-.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::before,
-.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::before,
-.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::before {
-  width: 8.8125rem;
-  height: 3.75rem;
-  background-size: cover;
-  background-image: url("https://khcc.s3.eu-central-1.amazonaws.com/bnan/Images/logo-white.svg");
-}
-
-.tb-default .ng-star-inserted.tb-custom-css .tb-request-password-reset-content::after,
-.tb-default .ng-star-inserted.tb-custom-css .tb-create-password-content::after,
-.tb-default .ng-star-inserted.tb-custom-css .tb-login-content::after {
-  content: "IoT Platform";
-  top: calc(40% + 5rem);
-  width: calc(25% - 80px);
-  color: #fff;
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
